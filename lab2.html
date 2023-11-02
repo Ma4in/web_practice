@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Лаба 2</title>
+        <style>
+            .bukavy::after {content: "тут должны быть буквы";}
+        </style>
+    </head>
+    <body>
+        <table border="1" align="center">
+            <tr>
+                <th>type</th><th>Вид</th><th>Описание</th>
+            </tr>
+            <tr>
+                <td>button</button></td><td><input type="button" value="knipka"></td></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>checkbox</button></td><td><input type="checkbox">galochka</td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>file</button></td><td><input type="file"></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>hidden</button></td><td><input type="hidden">тут ничего нет, честно</td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>image</button></td><td><input type="image" src="resurces/j.png" size="10%"></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>password</button></td><td><input type="password"></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>radio</button></td><td><input type="radio" name="" id="">нет патефон</td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>reset</button></td><td><input type="reset" value="сброс"></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>submit</button></td><td><input type="submit" value="подтвердить"></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>text</button></td><td><input type="text" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>color</button></td><td><input type="color" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>date</button></td><td><input type="date" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>datetime</button></td><td><input type="datetime" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>datetime-local</button></td><td><input type="datetime-local" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>email</button></td><td><input type="email" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>number</button></td><td><input type="number" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>range</button></td><td><input type="range" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>search</button></td><td><input type="search" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>tel</button></td><td><input type="tel" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>time</button></td><td><input type="time" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>url</button></td><td><input type="url" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>month</button></td><td><input type="month" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+            <tr>
+                <td>week</button></td><td><input type="week" name="" id=""></td><td class="bukavy"></td>
+            </tr>
+        </table>
+        <p></p>
+        <table style="border: 1px solid ; width: 600px;" align="center">
+            <tr><th align="right">Анкета читателя</th></tr>
+            <tr><td>Введите регистрационное имя <input type="text"></td></tr>
+            <tr><td>Введите пароль <input type="password"></td></tr>
+            <tr><td>Ваш возраст: </td></tr>
+            <tr><td><input type="radio" name="r1"> меньше 20</td></tr>
+            <tr><td><input type="radio" name="r1"> от 20 до 30</td></tr>
+            <tr><td><input type="radio" name="r1"> старше 30</td></tr>
+            <tr><th align="left">Книги каких жанров вы предпочитаете?</th></tr>
+            <tr><td><select>
+                <option>Фантасткa</option>
+                <option>Детектив</option>
+                <option>Романтика</option>
+                <option>Боевик</option>
+            </select></td></tr>
+            <tr><th>Как вы узнает о новых книгах</th></tr>
+            <tr><td><input type="checkbox">от преподавателей</td></tr>
+            <tr><td><input type="checkbox">от друзей и знакомы</td></tr>
+            <tr><td><input type="checkbox">в магазине</td></tr>
+            <tr><td><input type="checkbox">через Интернет</td></tr>
+            <tr><td><input type="submit" value="Отправить"><input type="reset" value="Отмена"></td></tr>
+        </table>
+        <p></p>
+        <table style="border: 1px solid; width: 600px;" align="center">
+            <tr><th align="right">Анкета студента</th></tr>
+            <tr><td>Введите имя <input type="text"></td></tr>
+            <tr><td>Ваш пол: </td></tr>
+            <tr><td><input type="radio" name="r2"> Мужской</td></tr>
+            <tr><td><input type="radio" name="r2"> Женский</td></tr>
+            <tr><td><input type="radio" name="r2"> Гендерхрюидный свиносексуал</td></tr>
+            <tr><th align="left">На каком курсе вы учитесь? <select>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+            </select></tр></tr>
+            <tr><th>Какие языки программирования вы знаете?</th></tr>
+            <tr><td><input type="checkbox">С</td></tr>
+            <tr><td><input type="checkbox">С++</td></tr>
+            <tr><td><input type="checkbox">С#</td></tr>
+            <tr><td><input type="checkbox">JAVA</td></tr>
+            <tr><th>Напишите несколько слов о себе:</th></tr>
+            <tr><td><textarea cols="60" rows="10"></textarea></td></tr>
+            <tr><td><input type="submit" value="Отправить"><input type="reset" value="Отмена"></td></tr>
+        </table>
+        <p></p>
+        <table style="border: 1px solid; width: 600px;" align="center">
+            <tr><th align="right">Бланк заказа товаов</th></tr>
+            <tr><td>Номер вашего банковского счета<input type="text"></td></tr>
+            <tr><td>Ваш пароль <input type="password"></td></tr>
+            <tr><td>Метод оплаты: </td></tr>
+            <tr><td><input type="radio" name="r3"> Шекелями</td></tr>
+            <tr><td><input type="radio" name="r3"> Туз треф</td></tr>
+            <tr><th align="left">Выберите товар</th></tr>
+            <tr><td><select>
+                <option>Книга</option>
+                <option>Журнал</option>
+                <option>Газета</option>
+                <option>Альбом</option>
+            </select></td></tr>
+            <tr><th align="left">Какуб дополннительную информацию вы хотите получить</th></tr>
+            <tr><td><input type="checkbox">Остаток средств на счету</td></tr>
+            <tr><td><input type="checkbox">Историю платежей</td></tr>
+            <tr><td><input type="submit" value="Отправить"><input type="reset" value="Отмена"></td></tr>
+        </table>
+    </body>
+</html>

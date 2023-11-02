@@ -1,0 +1,384 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.big_text { 
+    font-size: 200%;
+    text-align: center;
+}
+.n{
+    font-size: 150%;
+}
+.anim_box{
+    margin: auto;
+    padding: 10px;
+    width: 600px;
+}
+.anim_box img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 110px;
+}
+
+
+/*Почта*/
+
+.postbox{ 
+    z-index: 2;
+    animation-name: boxin;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count:infinite;
+}
+
+@keyframes boxin {
+    to{
+        filter: drop-shadow(0px 0px 10px #ee932c);
+    }
+}
+
+.move_obj{
+    z-index: 1;
+    position:absolute;
+    transform:translate(225px,0px);
+    animation-name: mail_in;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes mail_in {
+    to{
+        transform:translate(225px, 30px);
+    }
+}
+
+/*Вибрация*/
+
+.vrvrvr{
+    animation-name: vrvr;
+    animation-duration: 1s;
+    filter: drop-shadow(5px 5px 5px #666666);
+    
+    animation-iteration-count: infinite;
+}
+
+@keyframes vrvr {
+    20%{
+        transform: rotate(-20deg);
+        filter: drop-shadow(0px 0px 20px #ff0000);
+    }
+    30%{
+        transform: rotate(20deg);
+        filter: drop-shadow(0px 0px 20px #ffe600);
+    }
+    40%{
+        transform: rotate(-20deg);
+        filter: drop-shadow(0px 0px 20px #ff0000);
+    }
+    50%{
+        transform: rotate(20deg);
+        filter: drop-shadow(0px 0px 20px #ffe600);
+    }
+    60%{
+        transform: rotate(0deg);
+        filter: drop-shadow(5px 5px 5px #666666);
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+
+/*Сдавливание*/
+
+.playground{
+    margin: auto;
+    height: 400px;
+    width: 1600px;
+}
+
+.ball{
+    width: 100px;
+    position: absolute;
+    animation-name: jumps;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes jumps{
+    25%{
+        transform: translate(400px, 150px) rotate(60deg);
+    }
+
+    37%{
+        transform: translate(600px, 0px) rotate(120deg);;
+    }
+
+    50%{
+        transform: translate(800px, 150px) rotate(180deg);;
+    }
+
+    62%{
+        transform: translate(1000px, 0px) rotate(240deg);;
+    }
+
+    75%{
+        transform: translate(1200px, 150px) rotate(300deg);
+    }
+
+    100%{
+        transform: translate(1500px) rotate(360deg);;
+    }
+}
+
+.pillar{
+    position: absolute;
+    background-color: #999999;
+    width: 100px;
+    height: 150px;
+    border-radius: 15px;
+}
+
+#p1{
+    transform: translate(400px,200px);
+    animation-delay: 410ms;
+    animation-duration: 4s;
+    animation-name: squeeze1;
+    animation-iteration-count: infinite;
+}
+
+@keyframes squeeze1{
+    16%{
+        transform: scaleY(0.7) translate(400px,320px);
+    }
+    38%{
+        transform: translate(400px,200px);
+    }
+}
+
+#p2{
+    transform: translate(800px,200px);
+    animation-delay: 1610ms;
+    animation-duration: 4s;
+    animation-name: squeeze2;
+    animation-iteration-count: infinite;
+}
+
+@keyframes squeeze2{
+    16%{
+        transform: scaleY(0.7) translate(800px,320px);
+    }
+    38%{
+        transform: translate(800px,200px);
+    }
+}
+
+#p3{
+    transform: translate(1200px,200px);
+    animation-delay: 2610ms;
+    animation-duration: 4s;
+    animation-name: squeeze3;
+    animation-iteration-count: infinite;
+}
+
+@keyframes squeeze3{
+    16%{
+        transform: scaleY(0.7) translate(1200px,320px);
+    }
+    38%{
+        transform: translate(1200px,200px);
+    }
+}
+
+/*Новости*/
+
+
+/*Часы*/
+
+.clock{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 400px;
+    height: 400px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.filler{
+    background-color: black;
+    height: 50%;
+    margin: 0px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.clock_face{
+    margin-top: 25px;
+    width: 350px;
+}
+
+.min_ar{
+    position: absolute;
+    height: 300px;
+    width: 10px;
+    transform: translate(200px, -325px);
+    animation-name: rot1;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+}
+
+.hout_ar{
+    position: absolute;
+    height: 200px;
+    width: 10px;
+    transform: translate(200px, -280px);
+    animation-name: rot2;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rot1 {
+    to{
+        transform:translate(200px, -325px) rotate(360deg);
+    }
+}
+
+@keyframes rot2 {
+    to{
+        transform:translate(200px, -280px) rotate(360deg);
+    }
+}
+
+/*Педобир*/
+
+.head_con{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 600px;
+    background-color: antiquewhite;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.head{
+    position: absolute;
+    transform: translate(150px, 150px);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 2;
+}
+
+.ear{
+    background-color: black;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+.ayeball1{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(35px, 20px);
+}
+
+.ayeball2{
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transform: translate(35px, 20px);
+}
+
+#eleft{
+    transform: translate(100px, 100px);
+    animation-name: year_sz_l;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#eright{
+    transform: translate(380px, 100px);
+    animation-name: year_sz_r;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.aye{
+    background-color: rgb(255, 255, 255);
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#aleft{
+    transform: translate(40px, 80px);
+    animation-name: ayeblink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#aright{
+    transform: translate(180px, 80px);
+}
+
+.nose{
+    background-color: rgb(255, 255, 255);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(110px, 155px);
+}
+
+.nosedrya{
+    background-color: rgb(0, 0, 0);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translate(40px, 25px);
+
+    animation-name: nose_sz;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ayeblink {
+    to{
+        transform: translate(40px, 90px) scaleY(0.1);
+    }
+}
+
+@keyframes nose_sz {
+    to{
+        transform: translate(50px, 25px);
+    }
+}
+
+@keyframes year_sz_l {
+    to{
+        transform: translate(100px, 120px);
+    }
+}
+
+@keyframes year_sz_r {
+    to{
+        transform: translate(380px, 130px);
+    }
+}

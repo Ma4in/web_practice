@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>LABA TRI</title>
+        <link rel="stylesheet" href="barrelroll.css">
+        <style>
+            .h_cont{
+                flex-direction: row;
+            }
+            .v_cont{
+                flex-direction: column;
+            }
+            .item {
+                border: 2px double blue; 
+                background: #686bff;
+                padding: 5px;
+                margin: 5px;
+                width: 100%;
+            }
+            div{
+                justify-content: center;
+                display:flex;
+                width: 100%;
+                margin: auto;
+                min-height: 60px;
+            }
+        </style>
+    </head>
+    <body onclick="location.reload();">
+        <audio autoplay="autoplay"><source src="resurces/p.ogg" type="audio/ogg"></audio>
+        <div class="v_cont" >
+            <div class="item" >БЛОК</div>
+            <div class="h_cont">
+                <div class="item" >BLOCK</div>
+                <div class="v_cont">
+                    <div class="item"  color="">BLOCK</div>
+                    <div class="item" >BLOCK</div>
+                    <div class="item" >BLOCK</div>
+                </div>
+            </div>
+            <div class="item" >БЛОК</div>
+        </div>
+        <hr size="10" color="black">
+        <div class="v_cont" >
+            <div class="item" >БЛОК</div>
+            <div class="h_cont">
+                <div class="item" >BLOCK</div>
+                <div class="item" >BLOCK</div>
+            </div>
+            <div class="item" >БЛОК</div>
+        </div>
+        <hr size="10" color="black">
+        <div class="v_cont" >
+            <div class="item" >БЛОК</div>
+            <div class="h_cont">
+                <div class="item" >BLOCK</div>
+                <div class="item" >BLOCK</div>
+                <div class="item" >BLOCK</div>
+            </div>
+            <div class="h_cont">
+                <div class="item" >BLOCK</div>
+                <div class="item" >BLOCK</div>
+            </div>
+            <div class="item" id="elem">БЛОК</div>
+        </div>
+        <script>
+            let items = document.getElementsByClassName("item")
+            for (let i of items)
+                i.style.background = '#' + (Math.random().toString(16) + '000000').substring(2,8);
+    
+        </script>
+    </body>
+</html>

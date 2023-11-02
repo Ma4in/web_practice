@@ -1,0 +1,74 @@
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+table {
+    width: 100%;
+}
+td{
+    width: 25%;
+    height: 40px;
+    font-size: 20px;
+}
+th{
+    background-color: #9e9e9e;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+/*________________________*/
+
+p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: large;
+    font-weight: 600;
+}
+
+.big_text{
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: 800;
+}
+
+#idenific{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:small;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+#kaskad p{
+    font-size: xx-large;
+    text-align: center;
+    background-color: yellow;
+}
+
+p[aria-busy="false"]{
+    font-size:xx-small;
+    font-weight: 700;
+}
+
+p[aria-checked="false"]::before{
+    content: "FFFFFFFFF";
+}
+/*________________________*/
+a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px;
+    padding: 3px 3px;
+    box-shadow: 3px 3px 6px 0 gray;
+}
+a:link{
+    background-color: rgb(0, 0, 0);
+}
+a:visited{
+    background-color: gray;
+}
+a:hover{
+    background-color: rgb(92, 0, 0);
+    color: #fff;
+}
+a:active{
+    background-color: dimgrey;
+    
+}
