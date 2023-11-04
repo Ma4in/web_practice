@@ -144,7 +144,7 @@ body{
 
 #p1{
     transform: translate(400px,200px);
-    animation-delay: 410ms;
+    animation-delay: 440ms;
     animation-duration: 4s;
     animation-name: squeeze1;
     animation-iteration-count: infinite;
@@ -298,12 +298,12 @@ body{
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background-color: black;
+    background-color: #4d2f0d;
     z-index: 2;
 }
 
 .ear{
-    background-color: black;
+    background-color: #553818;
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -368,7 +368,7 @@ body{
 }
 
 .nose{
-    background-color: rgb(255, 255, 255);
+    background-color: #754f24;
     width: 90px;
     height: 90px;
     border-radius: 50%;
