@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="lab8.css">
+    </head>
+    <body>
+        <div class="context-menu" id="m1">
+        </div>
+        <div class="context-menu-open">
+            <ul>
+                <li onclick="changeColor()">Цвет</li>
+                <li onclick="changeborderCircle()">Квадрат</li>
+                <li onclick="changeborderSquere()">Круг</li>
+                <li onclick="hideIt()">Спрятать</li>
+                <li onclick="setMargin()">Перенс</li>
+            </ul>
+        </div>
+        <hr>
+        <div class="playground" id="pgnd" tabindex="0">
+            <div class="ball" id="bll"></div>
+        </div>
+    </body>
+    <script src="lab8.js"></script>
+</html>

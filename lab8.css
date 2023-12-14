@@ -1,0 +1,46 @@
+.context-menu {
+    background: #BFE2FF;
+    width: 15em;
+    height: 15em;
+    margin: auto;
+    border-radius: 0px;
+}
+.context-menu-open {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+.context-menu-open ul {
+    padding: 0;
+    margin: 0;
+}
+.context-menu-open ul li {
+    border: 1px solid black;
+    cursor: pointer;
+    list-style: none;
+    padding: 10px 12px;
+    margin: 0;
+}
+
+/*____________2____________*/
+
+.playground{
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background-color: rgb(172, 172, 172);
+    margin: auto;
+}
+
+.ball{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    z-index: 999;
+    border-radius: 50%;
+    left: 500px;
+    top: 200px
+}
