@@ -74,3 +74,5 @@ playground.onkeydown = function (e){
 playground.onkeyup = function (){
     pressedButtons.clear();
 };
+
+//____________3____________//
