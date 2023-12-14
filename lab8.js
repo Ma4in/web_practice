@@ -68,7 +68,7 @@ playground.onkeydown = function (e){
         ball.style.top = (topPos + 5).toString() + "px";
         topPos += 5; 
     }
-    console.log(pressedButtons)
+    // console.log(pressedButtons)
 };
 
 playground.onkeyup = function (){
@@ -76,3 +76,49 @@ playground.onkeyup = function (){
 };
 
 //____________3____________//
+
+let txtA = document.getElementById("tArea");
+
+let txtButtons = new Map();
+
+let outText = document.getElementById("info");
+
+txtA.onkeyup = function (e){
+    if (txtButtons.has(e.key)){
+        txtButtons.set(e.key, txtButtons.get(e.key) + 1);
+    } else{
+        txtButtons.set(e.key, 1);
+    }
+    let outString  = "";
+    txtButtons.forEach((value, key) => {
+        outString += `${key}: ${value}` + '\n';
+    });
+    outText.innerHTML= outString;
+}
+
+//____________4____________//
+
+let mousePos = document.getElementById("mousePos");
+
+window.addEventListener('mousemove', function (event) {
+    let x = event.clientX; 
+    let y = event.clientY;
+    mousePos.innerHTML= `X : ${x}. Y : ${y}  `;
+});
+
+let lastMouse = document.getElementById("lastMouse");
+
+function getEvent(e){
+    lastMouse.innerHTML = `Последнее действие мыши : ${e.type}`;
+}
+
+window.addEventListener('click', function (e){getEvent(e);});
+window.addEventListener('dblclick', function (e){getEvent(e);});
+window.addEventListener('contextmenu', function (e){getEvent(e);});
+window.addEventListener('mouseover', function (e){getEvent(e);});
+window.addEventListener('mouseenter', function (e){getEvent(e);});
+window.addEventListener('mouseout', function (e){getEvent(e);});
+window.addEventListener('mouseleave', function (e){getEvent(e);});
+window.addEventListener('mousedown', function (e){getEvent(e);});
+window.addEventListener('mouseup', function (e){getEvent(e);});
+window.addEventListener('wheel', function (e){getEvent(e);});

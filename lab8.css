@@ -44,3 +44,17 @@
     left: 500px;
     top: 200px
 }
+
+/*____________3____________*/
+
+textarea{
+    display: block;
+    width: 40em;
+    height: 15em;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#info {
+    white-space: pre-line;
+}
